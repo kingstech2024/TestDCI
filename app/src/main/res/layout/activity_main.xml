@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/determineSituation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="determineSituation"
+        android:text="Determine Situation"
+        app:layout_constraintBottom_toTopOf="@+id/generateKey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/generateKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="generateKey"
+        android:text="Generate Key"
+        app:layout_constraintBottom_toTopOf="@+id/saveCertificationPath"
+        app:layout_constraintStart_toStartOf="@+id/determineSituation"
+        app:layout_constraintTop_toBottomOf="@+id/determineSituation" />
+
+    <Button
+        android:id="@+id/saveCertificationPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="saveCertificationPath"
+        android:text="Save Certification Path"
+        app:layout_constraintBottom_toTopOf="@+id/installCaSignedCertificate"
+        app:layout_constraintEnd_toEndOf="@+id/installCaSignedCertificate"
+        app:layout_constraintTop_toBottomOf="@+id/generateKey" />
+
+    <Button
+        android:id="@+id/installCaSignedCertificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:onClick="installCaSignedCertificate"
+        android:text="Install CA-signed certificate"
+        app:layout_constraintBottom_toTopOf="@+id/deleteKey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveCertificationPath" />
+
+    <Button
+        android:id="@+id/deleteKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:onClick="deleteKey"
+        android:text="Delete Key"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/installCaSignedCertificate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
