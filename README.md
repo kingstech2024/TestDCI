@@ -13,7 +13,7 @@ The "Delete Key" button deletes the "TestDciExampleKey" alias.
 
 The requested permissions are required to save the attestation record and certification paths to easily accessibly locations to facilitate review of the artifacts.
 
-To test as a profile owner delegate, install the TestDPC app and create a new work container. Install the TestDCI app in the work container and use TestDPC to designated TestDCI as a delegated certificate installer. 
+To test as a profile owner delegate, install the TestDPC app and create a new work container. Install the TestDCI app in the work container and use TestDPC to designate TestDCI as a delegated certificate installer. 
 
 To test as a device owner, install TestDCI and use adb to mark it as a device owner as follows:
 
